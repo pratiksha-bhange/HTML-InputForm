@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../Css/main.css'>
+    <script src='../JS/form.js'></script>  
+</head>
+<body>
+    <div class="main">
+        <div class="form-header">Html input fields</div>
+        <div class="form">
+            <div class="form-input-type">
+                <label> Name:</label>
+                <input type="text" placeholder="Name"/>
+                <span value=""></span>
+            </div>
+            <div class="form-input-type">
+                <label> Please Enter Password:</label>
+                <input type="password" placeholder="enter password"/>
+                <span></span>
+            </div>
+            <div class="form-input-type">
+                <label> Please email:</label>
+                <input type="email" placeholder="enter email"/>
+                <span></span>
+            </div>
+            <div class="form-input-type">
+                <label> Please url:</label>
+                <input type="url" placeholder="enter url"/>
+                <span></span>
+            </div>
+            <div class="form-input-type">
+                <label> Please phoneNumber:</label>
+                <input type="tel" placeholder=""/>
+                <span></span>
+            </div>  
+            <div class="form-input-type">
+                <label> Please Age:</label>
+                <input type="number" placeholder=""/>
+                <span></span>
+            </div>
+            <div class="form-input-type">
+                <label> Please select Gender:</label>
+                <input type="radio" id="M" name="Gender" value="Male" />
+                <label for="M">Male</label>
+                <input type="radio" id="F" name="Gender" value="Female" />
+                <label for="F">Female</label>
+                <input type="radio" id="Others" name="Gender" value="Others" />
+                <label for="Others">Others</label>
+                <span></span>
+            </div>
+            <div class="form-input-type">
+                <label> Salary:</label>
+                <input id ="sal" type="range" placeholder="" onchange="setSalary()" value min=0 max="200000"/>
+                <span id="salValue"></span>
+            </div> 
+                <div class="form-input-type">
+                <label> Date Time:</label>
+                <input type="date" placeholder=""/>
+                <span></span>
+            </div> 
+            <input type="submit" value="submit"/>     
+        </div>
+    </div>
+</body>
+</html>
